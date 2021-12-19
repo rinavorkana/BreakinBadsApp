@@ -26,7 +26,7 @@ const CharachterDetailsScreen=(props)=>{
         </View>
             <Text style={{size:20,margin:10}}>NickName: {props.route.params.nickname}</Text>
             <Text style={{size:20}}>Portrayed:{props.route.params.portrayed}</Text>
-            <Text style={{fontSize:20,margin:10}}>{props.route.params.appearance}</Text>
+            <Text style={{fontSize:22,margin:10}}>{props.route.params.appearance}</Text>
             </View>
     )
     
