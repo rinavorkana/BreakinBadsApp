@@ -17,7 +17,7 @@ const CharachterDetailsScreen=(props)=>{
         </View>
         <View style={{backgroundColor:'#D0D3D4',width:'100%',height:250}}>
                  <Image
-                    style={{width:450, height:250,resizeMode:'stretch'}}
+                    style={{ height:250,resizeMode:'contain'}}
                     source={{uri:props.route.params.img}}>
                  </Image>
              </View>
@@ -26,7 +26,7 @@ const CharachterDetailsScreen=(props)=>{
         </View>
             <Text style={{size:20,margin:10}}>NickName: {props.route.params.nickname}</Text>
             <Text style={{size:20}}>Portrayed:{props.route.params.portrayed}</Text>
-            <Text style={{fontSize:20,margin:10}}>{appearance(props.route.params.appearance)}</Text>
+            <Text style={{fontSize:20,margin:10}}>{props.route.params.appearance}</Text>
             </View>
     )
     
