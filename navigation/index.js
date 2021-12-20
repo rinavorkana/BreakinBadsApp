@@ -2,8 +2,9 @@ import React from 'react';
 import {createStackNavigator } from '@react-navigation/stack';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Entypo from 'react-native-vector-icons/Entypo';
+import Octicons from 'react-native-vector-icons/Octicons';
 
 
 import CharachtersScreen, {screenOptions as CharachtersScreenOptions} from  '../Screens/charachters';
@@ -62,7 +63,7 @@ export const AppBottomBar = ()=>{
                 {
                     tabBarLabel :'Charachters',
                     tabBarIcon:({focused,color,size}) => {
-                        const iconShape = focused ? 'view-dashboard' : 'view-dashboard-outline';
+                        const iconShape = focused ? 'human-male-female' : 'human-male-female';
                         const iconColor = focused ? '#fff' : '#17202A';
                         const iconSize = focused ? 28 : 26;
                         return(
@@ -81,7 +82,7 @@ export const AppBottomBar = ()=>{
                 {
                     tabBarLabel :'Episodes',
                     tabBarIcon:({focused,color,size}) => {
-                        const iconShape = focused ? 'tshirt-crew' : 'tshirt-crew-outline';
+                        const iconShape = focused ? 'television' : 'television';
                         const iconColor = focused ? '#fff' : '#17202A';
                         const iconSize = focused ? 28 : 26;
                         return(
@@ -99,11 +100,11 @@ export const AppBottomBar = ()=>{
                 {
                     tabBarLabel :'Quoets',
                     tabBarIcon:({focused,color,size}) => {
-                        const iconShape = focused ? 'tshirt-crew' : 'tshirt-crew-outline';
+                        const iconShape = focused ? 'comment-discussion ': 'comment-discussion';
                         const iconColor = focused ? '#fff' : '#17202A';
                         const iconSize = focused ? 28 : 26;
                         return(
-                            <MaterialCommunityIcons name={iconShape} color={iconColor} size={iconSize}/>
+                            <Octicons  name={iconShape} color={iconColor} size={iconSize}/>
                         )
                     }
                 }
